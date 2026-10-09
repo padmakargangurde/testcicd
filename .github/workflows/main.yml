@@ -56,7 +56,7 @@ jobs:
             docker run -d \
               --name mio \
               --restart unless-stopped \
-              -p 8080:8080 \
+              -p 8888:80\
               ${{ secrets.DOCKER_USERNAME }}/mio:lates
 
             docker image prune -f
