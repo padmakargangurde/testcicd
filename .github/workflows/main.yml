@@ -3,7 +3,7 @@ name: ifieldsmart-mio
 on:
   push:
     branches:
-      - Dev
+      - main
 
 env:
   IMAGE_NAME: ifieldsmart-mio
