@@ -59,7 +59,7 @@ jobs:
             docker run -d \
               --name ifieldsmart-mio \
               --restart unless-stopped \
-              -p 9999:80 \
+              -p 7777:80 \
               ${{ secrets.DOCKER_USERNAME }}/ifieldsmart-mio:latest
 
             docker image prune -
