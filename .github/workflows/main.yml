@@ -52,12 +52,12 @@ jobs:
 
             docker pull ${{ secrets.DOCKER_USERNAME }}/ifieldsmart-mio:latest
 
-            docker stop spring-boot-app || true
+            docker stop ifieldsmart-mio || true
 
-            docker rm spring-boot-app || true
+            docker rm ifieldsmart-mio || true
 
             docker run -d \
-              --name spring-boot-app \
+              --name ifieldsmart-mio \
               --restart unless-stopped \
               -p 9999:80 \
               ${{ secrets.DOCKER_USERNAME }}/ifieldsmart-mio:latest
