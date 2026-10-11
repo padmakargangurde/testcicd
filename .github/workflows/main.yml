@@ -52,7 +52,7 @@ jobs:
           script: |
              set -e
 
-                  IMAGE="padmakar.gangurde2025/ifieldsmart-mio:latest"
+                  IMAGE="padmakargangurde2025/ifieldsmart-mio:latest"
                   CONTAINER="ifieldsmart-mio"
     
                     echo "Pulling latest image..."
