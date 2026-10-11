@@ -65,7 +65,7 @@ jobs:
                             docker run -d \
                             --name "$CONTAINER" \
                             --restart unless-stopped \
-                            -p 9999:80 \
+                            -p 4444:80 \
                             "$IMAGE"
     
                           echo "Checking container status..."
